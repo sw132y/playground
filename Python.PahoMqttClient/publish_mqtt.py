@@ -15,6 +15,7 @@ client.username_pw_set(username, password)
 client.connect(broker,port)
 ret = client.publish("greenhouse/waterflow/current",123)
 
-
-#python -m pip install --upgrade pip
-#pip install paho-mqtt
+#hassio custom sensor
+#- platform: mqtt
+#  name: Water Flow
+#  state_topic: "greenhouse/waterflow/current"
