@@ -18,8 +18,7 @@ password="mqtt_password"
 ```
 
 # Handle data in Hassio
-Define custom sensor
-Add into `configuration.yaml` line:
+Define custom sensor. Add into `configuration.yaml` line:
 ```
 sensor: !include customize_sensors.yaml
 ```
