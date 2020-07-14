@@ -21,4 +21,8 @@ def setup():
     client.connect(secrets.broker, secrets.port)
     pass
 
+def subscribe(topic):
+    client.subscribe(topic)
+    pass
+
 setup()

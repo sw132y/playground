@@ -6,6 +6,7 @@ Python MQTT Client
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 python publish_mqtt.py
+python subscribe_mqtt.py
 ```
 
 # Setup
@@ -17,7 +18,7 @@ username="mqtt_username"
 password="mqtt_password"
 ```
 
-# Handle data in Hassio
+# Handle MQTT data in Hassio
 Define custom sensor. Add into `configuration.yaml` line:
 ```
 sensor: !include customize_sensors.yaml
